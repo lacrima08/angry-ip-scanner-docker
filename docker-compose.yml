@@ -13,5 +13,5 @@ services:
       - TZ=Europe/Paris
     volumes:
       # Optionnel : pour conserver vos configurations	
-      #- /opt/angry-ip-scanner/config:/config
+      - /opt/angry-ip-scanner/config:/config
     restart: unless-stopped
