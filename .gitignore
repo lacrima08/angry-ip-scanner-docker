@@ -1,0 +1,11 @@
+# Configuration/données locales
+config/
+
+# Secrets éventuels
+.env
+
+# Logs
+*.log
+
+# Fichiers temporaires
+*.tmp
