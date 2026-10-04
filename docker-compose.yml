@@ -3,7 +3,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    image: ghcr.io/lacrima08/angry-ip-scanner-docker/angry-ip-scanner:latest
+    image: ghcr.io/lacrima08/angry-ip-scanner-docker:latest
     container_name: angryipscanner
     # Utilisation du réseau de l'hôte (Crucial pour scanner votre réseau)
 	network_mode: host
