@@ -1,0 +1,17 @@
+services:
+  angryipscanner:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: angry-ip-scanner:latest
+    container_name: angryipscanner
+    # Utilisation du réseau de l'hôte (Crucial pour scanner votre réseau)
+	network_mode: host
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
+    volumes:
+      # Optionnel : pour conserver vos configurations	
+      #- /opt/angry-ip-scanner/config:/config
+    restart: unless-stopped
